@@ -1,0 +1,296 @@
+/*Generalidades de los estilos*/
+:root {
+    font-family: Poppins, sans-serif, Open Sans, sans-serif;
+    color: #98ca3f, #fff, #7ba816, #00001a, #122c5c, #ffff72, #dbb6ee, #DCDFE4, #D0FDD7, #FFE4EC, #65D8D0, #9EEDFC, #F7D88B, #0C0C22;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+/*Determinar estilos principales*/
+body {
+    background-color: #fff;
+}
+h1 {
+    color: #98ca3f;
+}
+h2 {
+    color: #98ca3f;
+}
+h3 {
+    color: #000;
+}
+
+/*Header parte izquierda*/
+.header {
+    background-color: #00001a;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+@media screen and (max-width: 425px) {
+    .header {
+        width: 300px;
+    }
+}
+.header a {
+    color: #98ca3f;
+    font-family: Poppins, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.header input {
+    background-color: #122c5c;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px;
+
+}
+.header input::placeholder {
+    color: #fff;
+    text-align: center;
+}
+
+
+/*Header parte derecha*/
+header {
+    position: relative;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.header-right a {
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+.header-right input {
+    background-color: #98ca3f;
+    border: #000;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    align-items: center;
+}
+.header-right input:hover{
+    color: #7ba816;
+    transition: 0.5s ease;
+}
+.header-right ul {
+    color: #fff;
+    list-style: none;
+}
+.header-right ul a {
+    color:#fff ;
+    font-weight: 500;
+    font-size: medium;
+}
+.header-right ul a:hover{
+    color:  white;
+    transition: 0.5s ease;
+}
+
+.header-right ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+/*Contenido curso*/
+.curse-information {
+    display: grid;
+    place-items: center;
+    padding: 50px;
+}
+.curse-information h1{
+    font-family: Poppins, sans-serif;
+    color: black;
+}
+.curse-information p {
+    font-family: Opensans;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.container-curses {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 20px;
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+@media screen and (max-width: 425px) {
+    .curse-information {
+        width: 100px;
+    }
+    .route {
+        width: 100px;
+    }
+    .container-curses{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100px auto;
+        height: 200px;
+    }
+    .curses {
+        width: 200px;
+    }
+    .curses-two{
+        width: 100px;
+    }
+    .curses-three {
+        width: 100px;
+    }
+}
+.route h2{
+    font-family: Poppins, sans-serif;
+    padding-bottom: 18px;
+    color: #000;
+}
+.curses {
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+}
+
+.selector {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+    margin: 10px;
+}
+.selector a {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.selector a:hover {
+    color: #7ba816;
+    transition: 0.5s ease;
+}
+.curses h2 {
+    color: #000;
+    font-family: Poppins, sans-serif;
+    padding-bottom: 20px;
+}
+.curses-two h2{
+    font-family: Poppins, sans-serif;
+    padding-bottom: 18px;
+    padding-top: 20px;
+    color: #000;
+}
+.curses-three h2{
+    font-family: Poppins, sans-serif;
+    padding-bottom: 18px;
+    padding-top: 20px;
+    color: #000;
+}
+
+/*Planes*/
+.plans1 {
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+.plans {
+    text-align: center;
+    margin-bottom:  15px;
+}
+.plans h2 {
+    color: #000;
+    margin: 50px;
+}
+.plans-cards {
+    display: grid;
+    background-color: #7ba816;
+    margin: 30px;
+    width: 500px;
+    border-radius: 10px;
+}
+.action {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.action input {
+    background-color: #fff;
+    width: 70px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.action input:hover {
+    color: #98ca3f;
+    transition: 0.5s ease;
+}
+.card_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+}
+@media screen and (max-width: 425px) {
+    .card_content {
+        width: 300px;
+    }
+    
+}
+
+.contenido {
+    margin: 30px;
+}
+.contenido h4 {
+    margin: 5px;
+}
+.contenido li {
+    margin-top: 10px;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #65D8D0;
+    padding: 30px;
+}
+.footer h2 {
+    font-family: Poppins, sans-serif;
+    color: #98ca3f;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    margin-bottom: 5px;
+}
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+.social {
+    margin: 5px;
+}
+@media screen and (max-width: 425px ) {
+    .footer {
+        width: 300px;
+    }
+}

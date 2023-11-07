@@ -1,0 +1,224 @@
+/*Generalidades de los estilos*/
+:root {
+    font-family: Poppins, sans-serif, Open Sans, sans-serif;
+    color: #98ca3f, #fff, #7ba816, #00001a, #122c5c, #ffff72, #dbb6ee, #DCDFE4, #D0FDD7, #FFE4EC, #65D8D0, #9EEDFC, #F7D88B, #0C0C22;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+  /*Header parte izquierda*/
+.header {
+    background-color: #00001a;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header a {
+    color: #98ca3f;
+    font-family: Poppins, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.header input {
+    background-color: #122c5c;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px;
+
+}
+.header input::placeholder {
+    color: #fff;
+    text-align: center;
+}
+.header i {
+    align-items: right;
+    margin-left: 2.5px;
+
+}
+/*Responsive*/
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .header-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header ul {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+/*Header parte derecha*/
+header {
+    position: relative;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.header-right a {
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+.header-right input {
+    background-color: #98ca3f;
+    border: #000;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    align-items: center;
+}
+.header-right input:hover{
+    color: #7ba816;
+    transition: 0.5s ease;
+}
+.header-right ul {
+    color: #fff;
+    list-style: none;
+}
+.header-right ul a {
+    color:#fff ;
+    font-weight: 500;
+    font-size: medium;
+}
+.header-right ul a:hover{
+    color:  white;
+    transition: 0.5s ease;
+}
+
+.header-right ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+    
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.title h1{
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    margin: 25px;
+    font-weight: bold;
+}
+.title p {
+    margin: 25px;
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 25px;
+}
+p {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 25px;
+}
+/*Footer*/
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.derecha {
+    text-align: right;
+}
+
+/* Estilos para el contenido del footer */
+.frases {
+    text-align: center;
+}
+
+input[type="text"] {
+    background-color: #122c5c;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+input[type="placeholder"] {
+    color: white;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el footer en pantallas pequeñas (menos de 768px) */
+@media screen and (max-width: 767px) {
+    .container-footer {
+        text-align: center;
+        padding: 20px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .derecha {
+        text-align: center;
+    }
+    .frases {
+        text-align: center;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+}

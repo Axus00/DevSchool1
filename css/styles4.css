@@ -1,0 +1,247 @@
+/*Generalidades de los estilos*/
+:root {
+    font-family: Poppins, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #98ca3f, #fff, #7ba816, #00001a, #122c5c, #ffff72, #dbb6ee, #DCDFE4, #D0FDD7, #FFE4EC, #65D8D0, #9EEDFC, #F7D88B;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+/*Determinar estilos principales*/
+body {
+    background-color: #fff;
+}
+
+/*Header parte izquierda*/
+.header {
+    background-color: #00001a;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+@media screen and (max-width: 768px) {
+
+}
+.header a {
+    color: #98ca3f;
+    font-family: Poppins, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.header input {
+    background-color: #122c5c;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: #fff;
+    padding: 5px;
+
+}
+.header input::placeholder {
+    color: #fff;
+    text-align: center;
+}
+.header i {
+    align-items: right;
+    margin-left: 2.5px;
+
+}
+
+/*Header parte derecha*/
+header {
+    position: relative;
+}
+.header {
+    position: sticky;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.header-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.header-right a {
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+.header-right input {
+    background-color: #98ca3f;
+    border: #000;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    align-items: center;
+}
+.header-right input:hover{
+    color: #7ba816;
+    transition: 0.5s ease;
+}
+.header-right ul {
+    color: #fff;
+    list-style: none;
+}
+.header-right ul a {
+    color:#fff ;
+    font-weight: 500;
+    font-size: medium;
+}
+.header-right ul a:hover{
+    color: #98ca3f;
+    transition: 0.5s ease;
+}
+
+.header-right ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+    
+}
+/*Formulario*/
+.header-form h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.header-form span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.form-first {
+    display: grid;
+    place-items: center;
+}
+.form-first span{
+    cursor: pointer;
+}
+.form-first span:hover {
+    color: white;
+}
+.form-first span:hover {
+    background-color: #98ca3f;
+    transition: 0.5s ease;
+}
+.form {
+    background-color: #00001a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 510px;
+}
+.form span {
+    background-color: #7ba816;
+    padding: 0px 24px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.form1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.form1 label {
+    padding: 0px 0px 10px;
+    margin-right: 10px;
+    font:  Poppins, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.form1 input {
+    border-radius: 10px;
+    padding: 8px 16px;
+    width: 441px;
+    height: 41px;
+}
+.form1 textarea {
+    border-radius: 10px;
+    width: 450px;
+    height: 135px;
+}
+@media screen and (max-width: 425px) {
+    .form {
+        width: 300px;
+    }
+    .form input {
+        width: 200px;
+    }
+    .form textarea {
+        width: 200px;
+    }
+}
+
+
+
+/*Sección mapa*/
+.map {
+    padding: 100px;
+}
+.map h2 {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 900;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+.map iframe {
+    padding-bottom: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+@media screen and (max-width: 425px) {
+    .map iframe{
+        width: 400px;
+    }
+}
+/*Footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #65D8D0;
+    padding: 30px;
+}
+.footer h2 {
+    font-family: Poppins, sans-serif;
+    color: #98ca3f;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    margin-bottom: 5px;
+}
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+.social {
+    margin: 5px;
+}
+@media (max-width: 425px ) {
+    .footer {
+        width: 300px;
+    }
+}
